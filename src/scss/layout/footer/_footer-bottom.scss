@@ -1,0 +1,33 @@
+.footer-bottom {
+    min-height: 79px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .c {}
+}
+
+.footer-copyright {
+
+    .t {
+        font-family: 'RobotoRegular';
+        font-size: 16px;
+        color: #ffffff;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {
+            font-size: 12px;
+        }
+    }
+}

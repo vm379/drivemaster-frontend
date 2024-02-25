@@ -68,29 +68,3 @@
         }
     }
 }
-
-.footer-top {
-    // min-height: 545px;
-    padding: 150px 0 150px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    .c {}
-}
-
-.footer-bottom {
-    min-height: 79px;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-
-    .c {}
-}
-
-.footer-copyright {
-
-    .t {}
-}
