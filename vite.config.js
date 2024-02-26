@@ -51,7 +51,7 @@ export default defineConfig({
                         return 'assets/css/[name]-[hash][extname]';
                     }
 
-                    if (/\.(ttf|woff)$/.test(name ?? '')) {
+                    if (/\.(ttf|woff|eot)$/.test(name ?? '')) {
                         return 'assets/fonts/[name]-[hash][extname]';
                     }
 
