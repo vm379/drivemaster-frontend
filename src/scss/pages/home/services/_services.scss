@@ -1,0 +1,70 @@
+.services {
+    margin: 50px 0;
+    background-color: #333333;
+}
+
+.b-services {
+    height: 78px;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    list-style-position: inside;
+
+    .item {}
+}
+
+.service-list--item {
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'RobotoItalic';
+    font-size: 36px;
+
+    color: #FFFFFF;
+
+    white-space: nowrap;
+
+    &::before {
+        font-family: 'icons';
+        content: "\e900";
+
+        color: #F8A325;
+        font-size: 16px;
+
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 25px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 22px;
+    }
+}

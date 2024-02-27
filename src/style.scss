@@ -1,22 +1,23 @@
 @import './scss/fonts';
 @import './scss/icons';
-@import './scss/global/resetcss';
 @import './scss/functions/breakpoints';
+
+@import './scss/global/resetcss';
+@import './scss/global/b-links';
 
 //layout
 @import './scss/layout/layout';
+
 @import './scss/layout/header/header';
-@import './scss/layout/content/content';
-@import './scss/layout/footer/footer';
-
-// header-top
 @import './scss/layout/header/header-top';
-
-// header-main
 @import './scss/layout/header/header-main';
 
-// footer-top
-@import './scss/layout/footer/footer-top';
+@import './scss/layout/content/content';
 
-// footer-bottom
+@import './scss/layout/footer/footer';
+@import './scss/layout/footer/footer-top';
 @import './scss/layout/footer/footer-bottom';
+
+// pages
+@import './scss/pages/home/start/start';
+@import './scss/pages/home/services/services';
