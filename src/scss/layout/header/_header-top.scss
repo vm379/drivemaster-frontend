@@ -66,9 +66,8 @@
 .header-top--item {
     display: flex;
     flex-direction: row;
-    align-items: center;
 
-    >i {}
+    >.i {}
 
     >.t {
         margin-left: 10px;

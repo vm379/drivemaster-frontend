@@ -66,3 +66,18 @@
         }
     }
 }
+
+.about-link {
+
+    >.link {
+
+        &:hover {}
+
+        >.b {
+            width: 150px;
+            border: 1px solid #F8A325;
+
+            >.t {}
+        }
+    }
+}
