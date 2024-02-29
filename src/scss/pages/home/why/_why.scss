@@ -1,0 +1,97 @@
+.why {
+    margin: 50px 0;
+    background: url('./img/why/why-bg.png') center center;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        background-image: unset;
+        background-color: #232323;
+    }
+}
+
+.b-why {
+    min-height: 550px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        display: block;
+        padding: 50px 0;
+    }
+}
+
+.why-articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: none;
+    }
+}
+
+.why-article {
+    padding: 30px;
+    border: 1px solid #4E5256;
+
+    >.title {
+        font-family: 'RobotoCondensedMedium';
+        font-size: 27px;
+
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        padding-bottom: 8px;
+    }
+
+    >.article {
+        font-family: 'RobotoLight';
+        font-size: 16px;
+        color: #FFFFFF;
+
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 22px;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 @import './scss/icons';
 @import './scss/functions/breakpoints';
 
+@import './scss/global/styles';
 @import './scss/global/resetcss';
 @import './scss/global/b-links';
 
@@ -24,3 +25,4 @@
 @import './scss/pages/home/about/about';
 @import './scss/pages/home/reviews/reviews';
 @import './scss/pages/home/plans/plans';
+@import './scss/pages/home/why/why';
