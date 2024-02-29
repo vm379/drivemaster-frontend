@@ -64,6 +64,7 @@
 
             font-family: 'RobotoLight';
             font-size: 16px;
+            line-height: 24px;
 
             color: #373737;
         }
@@ -74,15 +75,19 @@
     display: flex;
     flex-direction: row;
 
-    .title {
+    >.title {
         font-family: 'RobotoCondensedMedium';
         font-size: 25px;
 
         color: #333333;
     }
 
-    .stars {
+    >.stars {
         padding-left: 15px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -90,9 +95,9 @@
     display: flex;
     flex-direction: row;
 
-    .item {
+    >.item {
 
-        i {
+        .i {
             color: #F8A325;
         }
     }

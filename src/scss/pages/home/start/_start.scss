@@ -106,7 +106,7 @@
     padding: 5px;
     background-color: #FFFFFF;
 
-    img {
+    >img {
         display: block;
         max-width: 100%;
     }
@@ -163,7 +163,7 @@
         }
     }
 
-    .text {
+    >.text {
         width: 550px;
         padding: 5px 0 15px;
 
@@ -191,6 +191,7 @@
         p {
             margin: 0;
             padding: 0;
+            line-height: 25px;
         }
     }
 }

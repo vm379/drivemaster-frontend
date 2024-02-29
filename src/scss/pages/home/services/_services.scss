@@ -30,41 +30,43 @@
     flex-direction: row;
     align-items: center;
 
-    font-family: 'RobotoItalic';
-    font-size: 36px;
-
-    color: #FFFFFF;
-
-    white-space: nowrap;
-
-    &::before {
-        font-family: 'icons';
-        content: "\e900";
-
+    >.i {
         color: #F8A325;
-        font-size: 16px;
+        font-size: 12px;
 
         margin-left: 25px;
         margin-right: 25px;
     }
 
-    // @include media-breakpoint-only(xxl) {}
+    >.text {
 
-    // @include media-breakpoint-only(xl) {}
+        >.t {
+            font-family: 'RobotoItalic';
+            font-size: 36px;
 
-    // @include media-breakpoint-only(lg) {}
+            color: #FFFFFF;
 
-    // @include media-breakpoint-only(md) {}
+            white-space: nowrap;
 
-    // @include media-breakpoint-only(sm) {}
+            // @include media-breakpoint-only(xxl) {}
 
-    // @include media-breakpoint-only(xs) {}
+            // @include media-breakpoint-only(xl) {}
 
-    @include media-breakpoint-down(xxl) {
-        font-size: 25px;
-    }
+            // @include media-breakpoint-only(lg) {}
 
-    @include media-breakpoint-down(sm) {
-        font-size: 22px;
+            // @include media-breakpoint-only(md) {}
+
+            // @include media-breakpoint-only(sm) {}
+
+            // @include media-breakpoint-only(xs) {}
+
+            @include media-breakpoint-down(xxl) {
+                font-size: 25px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 22px;
+            }
+        }
     }
 }

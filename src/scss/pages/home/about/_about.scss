@@ -24,7 +24,7 @@
         grid-template-columns: none
     }
 
-    .c-1 {
+    >.c-1 {
         // padding-top: 75px;
         // padding-right: 40px;
 
@@ -47,7 +47,7 @@
         }
     }
 
-    .center {
+    >.center {
         overflow: hidden;
 
         // @include media-breakpoint-only(xxl) {}
@@ -71,7 +71,7 @@
         }
     }
 
-    .c-2 {
+    >.c-2 {
         padding: 75px 0 0 40px;
 
         // @include media-breakpoint-only(xl) {}
@@ -109,6 +109,8 @@
         font-size: 35px;
         line-height: 50px;
 
+        color: #373737;
+
         // @include media-breakpoint-only(xxl) {}
 
         // @include media-breakpoint-only(xl) {}
@@ -129,14 +131,18 @@
     p {
         margin: 25px 0;
 
+        color: #373737;
+
         font-family: 'RobotoLight';
         font-size: 16px;
+
+        line-height: 24px;
     }
 }
 
 .about-us-list {
 
-    .item {
+    >.item {
         margin: 5px 0 5px 0;
 
         &:first-child {
@@ -153,22 +159,19 @@
     display: flex;
     flex-direction: row;
 
-    .i {
-
-        i {
-            color: #F8A325;
-            font-size: 16px;
-            line-height: 20px;
-        }
+    >.i {
+        color: #F8A325;
+        font-size: 16px;
+        line-height: 24px;
     }
 
-    .text {
+    >.text {
         padding-left: 10px;
 
-        .t {
+        >.t {
             font-size: 16px;
             color: #373737;
-            line-height: 20px;
+            line-height: 24px;
         }
     }
 }
