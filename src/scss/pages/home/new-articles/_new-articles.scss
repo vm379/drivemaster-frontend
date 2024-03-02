@@ -133,6 +133,7 @@
         @include media-breakpoint-only(xs) {
             display: block;
             padding-top: 15px;
+            padding-left: 0;
         }
     }
 }
