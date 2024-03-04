@@ -1,5 +1,6 @@
-@import './scss/fonts';
-@import './scss/icons';
+@import './scss/fonts/fonts';
+@import './scss/fonts/icons';
+
 @import './scss/functions/breakpoints';
 
 @import './scss/global/styles';
@@ -28,3 +29,18 @@
 @import './scss/pages/home/why/why';
 @import './scss/pages/home/new-articles/new-articles';
 @import './scss/pages/home/location/location';
+
+// menu
+@import './scss/menu/mobile';
+
+.d {
+    display: block;
+}
+
+.o {
+    opacity: 1;
+}
+
+.scrolloff {
+    overflow: hidden;
+}

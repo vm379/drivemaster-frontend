@@ -82,6 +82,7 @@
 
             &:hover {
                 color: #F8A325;
+                transition: color .25s;
             }
         }
     }
@@ -102,7 +103,10 @@
 
         >.t {
             font-size: 16px;
+
             color: #FFFFFF;
+            transition: color .25s;
+
             line-height: 22px;
         }
     }
@@ -168,6 +172,8 @@
 
         >.link {
             color: #FFFFFF;
+            transition: color .25s;
+
             cursor: pointer;
 
             &:hover {
