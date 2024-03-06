@@ -5,6 +5,9 @@
 .logo-img {
     display: block;
 
+    width: 200px;
+    height: auto;
+
     // @include media-breakpoint-only(xxl) {}
 
     // @include media-breakpoint-only(xl) {}
@@ -25,8 +28,7 @@
 }
 
 .header-main {
-    // min-height: 92px;
-    padding-top: 22px;
+    min-height: 70px;
 
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -44,8 +46,8 @@
 
     // @include media-breakpoint-only(xs) {}
 
-    @include media-breakpoint-down(lg) {
-        padding: 8px 0 5px;
+    @include media-breakpoint-down(md) {
+        min-height: 50px;
     }
 
     >.menu {
@@ -91,7 +93,7 @@
         }
     }
 
-    >.mobile-menu {
+    >.mobile {
         display: none;
 
         // @include media-breakpoint-only(xxl) {}
