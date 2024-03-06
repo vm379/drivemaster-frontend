@@ -7,6 +7,7 @@ const root = resolve(__dirname, 'src');
 const outDir = resolve(__dirname, 'dist');
 
 export default defineConfig({
+    base: '',
     root,
     publicDir: "../public",
 
@@ -28,6 +29,12 @@ export default defineConfig({
         }),
     ],
 
+    // resolve: {
+    //     alias: [
+    //         { find: '@', replacement: '' },
+    //     ],
+    // },
+
     build: {
         outDir,
         emptyOutDir: true,
@@ -39,16 +46,31 @@ export default defineConfig({
             },
 
             output: {
-                chunkFileNames: 'assets/js/[name]-[hash].js',
-                entryFileNames: 'assets/js/[name]-[hash].js',
+                // chunkFileNames: 'assets/js/[name]-[hash].js',
+                // entryFileNames: 'assets/js/[name]-[hash].js',
+
+                chunkFileNames: 'assets/[name]-[hash].js',
+                entryFileNames: 'assets/[name]-[hash].js',
 
                 assetFileNames: ({ name }) => {
+                    // if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
+                    //     return 'assets/img/[name]-[hash][extname]';
+                    // }
+
+                    // if (/\.css$/.test(name ?? '')) {
+                    //     return 'assets/css/[name]-[hash][extname]';
+                    // }
+
+                    // if (/\.(ttf|woff|eot)$/.test(name ?? '')) {
+                    //     return 'assets/fonts/[name]-[hash][extname]';
+                    // }
+
                     if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
                         return 'assets/img/[name]-[hash][extname]';
                     }
 
                     if (/\.css$/.test(name ?? '')) {
-                        return 'assets/css/[name]-[hash][extname]';
+                        return 'assets/[name]-[hash][extname]';
                     }
 
                     if (/\.(ttf|woff|eot)$/.test(name ?? '')) {
