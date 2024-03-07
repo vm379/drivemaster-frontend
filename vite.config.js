@@ -42,7 +42,7 @@ export default defineConfig({
 
         rollupOptions: {
             input: {
-                main: resolve(root, 'index.html')
+                home: resolve(root, 'index.html'),
             },
 
             output: {
